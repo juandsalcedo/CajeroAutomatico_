@@ -1,0 +1,10 @@
+﻿-- Elimina la tabla si ya existe
+DROP TABLE IF EXISTS Transacciones;
+DROP TABLE IF EXISTS CEUNTAS;
+DROP TABLE IF EXISTS USUARIOS;
+DROP TABLE IF EXISTS ROLES;
+ 
+--  Crear nueva estructura
+CREATE TABLE ROLES (
+	IdRol INT IDENTITY (1,1) PRIMARY KEY,
+	NombreRol VARCAHR
