@@ -33,7 +33,9 @@
             this.btnRetirar = new System.Windows.Forms.Button();
             this.btnConsultarSaldo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LblSaldoDisponible = new System.Windows.Forms.Label();
             this.grpOpciones.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpOpciones
@@ -81,10 +83,20 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.LblSaldoDisponible);
             this.panel1.Location = new System.Drawing.Point(251, 43);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(504, 342);
             this.panel1.TabIndex = 1;
+            // 
+            // LblSaldoDisponible
+            // 
+            this.LblSaldoDisponible.AutoSize = true;
+            this.LblSaldoDisponible.Location = new System.Drawing.Point(157, 61);
+            this.LblSaldoDisponible.Name = "LblSaldoDisponible";
+            this.LblSaldoDisponible.Size = new System.Drawing.Size(55, 13);
+            this.LblSaldoDisponible.TabIndex = 0;
+            this.LblSaldoDisponible.Text = "$$$$$$$$";
             // 
             // FrmUsuario
             // 
@@ -97,6 +109,8 @@
             this.Name = "FrmUsuario";
             this.Text = "UsuarioForm";
             this.grpOpciones.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -108,5 +122,6 @@
         private System.Windows.Forms.Button btnRetirar;
         private System.Windows.Forms.Button btnConsultarSaldo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label LblSaldoDisponible;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CajeroAutomatico.VISTA
 {
-    partial class FormOpciones
+    partial class RetirarForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(272, 107);
+            this.label1.Location = new System.Drawing.Point(301, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(251, 19);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // txbDineroRetirar
             // 
             this.txbDineroRetirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbDineroRetirar.Location = new System.Drawing.Point(324, 141);
+            this.txbDineroRetirar.Location = new System.Drawing.Point(351, 170);
             this.txbDineroRetirar.Name = "txbDineroRetirar";
             this.txbDineroRetirar.Size = new System.Drawing.Size(144, 26);
             this.txbDineroRetirar.TabIndex = 1;
@@ -54,7 +54,7 @@
             // btnRetirar
             // 
             this.btnRetirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetirar.Location = new System.Drawing.Point(351, 295);
+            this.btnRetirar.Location = new System.Drawing.Point(376, 225);
             this.btnRetirar.Name = "btnRetirar";
             this.btnRetirar.Size = new System.Drawing.Size(94, 54);
             this.btnRetirar.TabIndex = 2;

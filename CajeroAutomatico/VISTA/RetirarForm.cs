@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico.VISTA
 {
-    public partial class FormOpciones : Form
+    public partial class RetirarForm : Form
     {
-        public FormOpciones()
+        public RetirarForm()
         {
             InitializeComponent();
         }
 
         private void btnRetirar_Click(object sender, EventArgs e)
         {
-            Funcionalidades funcionalidades = new Funcionalidades();
+            RetirarDAL funcionalidades = new RetirarDAL();
 
             funcionalidades.Retirar(txbDineroRetirar);
             txbDineroRetirar.Clear();

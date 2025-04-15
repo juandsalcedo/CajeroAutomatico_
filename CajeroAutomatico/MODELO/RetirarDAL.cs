@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CajeroAutomatico.MODELO
 {
-    internal class Funcionalidades
+    internal class RetirarDAL
     {
 
         ConexionDB conexionDB = new ConexionDB();

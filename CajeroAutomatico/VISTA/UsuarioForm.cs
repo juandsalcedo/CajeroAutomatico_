@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CajeroAutomatico.CONTROLADOR;
+using CajeroAutomatico.MODELO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,8 +17,12 @@ namespace CajeroAutomatico.VISTA
             InitializeComponent();
         }
 
+        ConsultaDal consultaDal = new ConsultaDal();
         private void btnConsultarSaldo_Click(object sender, EventArgs e)
         {
+            
+            string saldo = consultaDal.ConsultarSaldo(1104546039);
+            LblSaldoDisponible.Text = saldo;
         }
 
         private void grpOpciones_Enter(object sender, EventArgs e)

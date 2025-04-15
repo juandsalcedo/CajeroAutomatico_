@@ -18,38 +18,8 @@ namespace CajeroAutomatico.VISTA
         {
             InitializeComponent();
         }
-
-        private void btnRegistrar_Click(object sender, EventArgs e)
-        {
-            RegistrarUs nuevoUsuario = new RegistrarUs
-            {
-                Nombre = txtNombre.Text,
-                Apellido = txtApellido.Text,
-                TipoDocumento = cmbTipoDocumento.SelectedItem.ToString(),
-                NumeroDocumento = txtNumeroDocumento.Text,
-                Correo = txtCorreo.Text,
-                Telefono = txtTelefono.Text
-            };
-
-            UsuarioControl controller = new UsuarioControl();
-
-            try
-            {
-                if (controller.RegistrarNuevoUsuario(nuevoUsuario))
-                {
-                    MessageBox.Show("Usuario registrado exitosamente.");
-                    LimpiarCampos();
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo registrar el usuario.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
+        RegistroDal usuario = new RegistroDal();
+       
         private void LimpiarCampos()
         {
             txtNombre.Clear();
@@ -62,7 +32,8 @@ namespace CajeroAutomatico.VISTA
 
         private void btnRegistrar_Click_1(object sender, EventArgs e)
         {
-
+            usuario.RegistrarNuevoUsuario(txtNombre, txtApellido, txtCorreo, txtTelefono, txtNumeroDocumento, txbContraseña, cmbTipoDocumento);
+            LimpiarCampos();
         }
     }
 }
